@@ -22,21 +22,37 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         panel1 = new com.raven.swing.Panel();
+        menu1 = new com.raven.component.Menu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         panel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        javax.swing.GroupLayout menu1Layout = new javax.swing.GroupLayout(menu1);
+        menu1.setLayout(menu1Layout);
+        menu1Layout.setHorizontalGroup(
+            menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 191, Short.MAX_VALUE)
+        );
+        menu1Layout.setVerticalGroup(
+            menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 551, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
         panel1Layout.setHorizontalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1158, Short.MAX_VALUE)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addComponent(menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 967, Short.MAX_VALUE))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 605, Short.MAX_VALUE)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addComponent(menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 54, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -88,6 +104,7 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.raven.component.Menu menu1;
     private com.raven.swing.Panel panel1;
     // End of variables declaration//GEN-END:variables
 }
