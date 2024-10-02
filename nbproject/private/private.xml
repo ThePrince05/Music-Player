@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/main/Main.java</file>
             <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/model/Model_Menu.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/component/ItemMenu.java</file>
             <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/component/ListMenu.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/component/Menu.java</file>
             <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/Music%20Player/src/com/raven/swing/Panel.java</file>
         </group>
     </open-files>
