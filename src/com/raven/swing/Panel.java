@@ -19,6 +19,7 @@ public class Panel extends JPanel{
         g2.setColor(getBackground());
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), 20, 20);
+        g2.fillRect(0, getHeight()-25, getWidth(), getHeight());
         super.paintComponent(grphcs);
         
     }
