@@ -1,14 +1,25 @@
 
 package com.raven.form;
 
+import com.raven.model.Model_Popular;
+import javax.swing.ImageIcon;
+
 
 public class Form_Artists extends javax.swing.JPanel {
 
  
     public Form_Artists() {
         initComponents();
+        init();
     }
 
+    
+    private void init(){
+       mostPopular.addImage(new Model_Popular(new ImageIcon(getClass().getResource("/com/raven/icon/test/avicii.png")),"Avicii True Stories","15 Albums | 17.5M Followers")); 
+       mostPopular.addImage(new Model_Popular(new ImageIcon(getClass().getResource("/com/raven/icon/test/kygo.png")),"Kygo and Alan Walker","15 Albums | 17.5M Followers")); 
+       mostPopular.addImage(new Model_Popular(new ImageIcon(getClass().getResource("/com/raven/icon/test/ed-sheeran.jpg")),"Ed Sheeran","15 Albums | 17.5M Followers")); 
+       mostPopular.addImage(new Model_Popular(new ImageIcon(getClass().getResource("/com/raven/icon/test/sigala.jpg")),"Sigala","15 Albums | 17.5M Followers")); 
+    }
   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -16,7 +27,7 @@ public class Form_Artists extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        mostPopular1 = new com.raven.component.MostPopular();
+        mostPopular = new com.raven.component.MostPopular();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -36,7 +47,7 @@ public class Form_Artists extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mostPopular1, javax.swing.GroupLayout.DEFAULT_SIZE, 907, Short.MAX_VALUE)
+                    .addComponent(mostPopular, javax.swing.GroupLayout.DEFAULT_SIZE, 907, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -51,7 +62,7 @@ public class Form_Artists extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addComponent(mostPopular1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mostPopular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(285, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -60,6 +71,6 @@ public class Form_Artists extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private com.raven.component.MostPopular mostPopular1;
+    private com.raven.component.MostPopular mostPopular;
     // End of variables declaration//GEN-END:variables
 }

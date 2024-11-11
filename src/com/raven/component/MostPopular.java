@@ -1,6 +1,7 @@
 
 package com.raven.component;
 
+import com.raven.model.Model_Popular;
 
 public class MostPopular extends javax.swing.JLayeredPane {
 
@@ -15,7 +16,7 @@ public class MostPopular extends javax.swing.JLayeredPane {
     private void initComponents() {
 
         sp = new javax.swing.JScrollPane();
-        Panel = new javax.swing.JPanel();
+        panel = new javax.swing.JPanel();
         scrollBar1 = new com.raven.swing.ScrollBar();
 
         sp.setBackground(new java.awt.Color(255, 255, 255));
@@ -25,35 +26,44 @@ public class MostPopular extends javax.swing.JLayeredPane {
         sp.setHorizontalScrollBar(scrollBar1);
         sp.setName(""); // NOI18N
 
-        Panel.setBackground(new java.awt.Color(255, 255, 255));
-        sp.setViewportView(Panel);
+        panel.setBackground(new java.awt.Color(255, 255, 255));
+        sp.setViewportView(panel);
 
         scrollBar1.setOrientation(javax.swing.JScrollBar.HORIZONTAL);
         scrollBar1.setToolTipText("");
+
+        setLayer(sp, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        setLayer(scrollBar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sp, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 71, Short.MAX_VALUE)
-                .addComponent(scrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
-            .addComponent(sp)
+                .addComponent(scrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(sp, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(scrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
+    public void addImage(Model_Popular data){
+        ItemImage item = new ItemImage();
+        item.setData(data);
+        panel.add(item);
+        panel.revalidate();
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Panel;
+    private javax.swing.JPanel panel;
     private com.raven.swing.ScrollBar scrollBar1;
     private javax.swing.JScrollPane sp;
     // End of variables declaration//GEN-END:variables

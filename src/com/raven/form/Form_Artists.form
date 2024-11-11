@@ -24,7 +24,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="mostPopular1" pref="907" max="32767" attributes="0"/>
+                  <Component id="mostPopular" pref="907" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -44,7 +44,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="mostPopular1" min="-2" max="-2" attributes="0"/>
+              <Component id="mostPopular" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="285" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -74,7 +74,7 @@
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
-    <Component class="com.raven.component.MostPopular" name="mostPopular1">
+    <Component class="com.raven.component.MostPopular" name="mostPopular">
     </Component>
   </SubComponents>
 </Form>
