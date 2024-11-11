@@ -45,6 +45,7 @@ public class Main extends javax.swing.JFrame {
         form_Artists1 = new com.raven.form.Form_Artists();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
         setUndecorated(true);
 
         panel1.setBackground(new java.awt.Color(255, 255, 255));
