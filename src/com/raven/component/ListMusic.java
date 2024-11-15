@@ -1,11 +1,10 @@
 package com.raven.component;
 
-import com.raven.model.Model_Menu;
+
 import com.raven.model.Model_Music;
 import java.awt.Component;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.DefaultListModel;
-
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
@@ -33,7 +32,7 @@ public class ListMusic<E extends Object> extends JList<E>{
                    data = (Model_Music) o; 
                 }
                 else{
-                  data = new Model_Music("l","No Music", "00:00");  
+                  data = new Model_Music("1","No Music", "00:00");  
                 }
                 ItemMusic item = new ItemMusic(data);
                 item.setPlay(index == playIndex);

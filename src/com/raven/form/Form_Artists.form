@@ -24,14 +24,17 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
                   <Component id="mostPopular" pref="907" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="music2" min="-2" pref="457" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -46,7 +49,8 @@
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="mostPopular" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="303" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="music2" min="-2" pref="301" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,13 +73,21 @@
           <Font name="SansSerif" size="18" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="50" green="50" red="50" type="rgb"/>
+          <Color blue="32" green="32" red="32" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Most popular"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="alignmentY" type="float" value="0.1"/>
       </Properties>
     </Component>
     <Component class="com.raven.component.MostPopular" name="mostPopular">
+    </Component>
+    <Component class="com.raven.component.Music" name="music2">
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="null"/>
+        </Property>
+      </AccessibilityProperties>
     </Component>
   </SubComponents>
 </Form>

@@ -29,8 +29,7 @@ public class ItemMusic extends javax.swing.JPanel {
         else{
             lbIcon.setIcon(null);
             lbIcon.setText(data.getNo());
-            lbIcon.setIcon(new ImageIcon(getClass().getResource("/com/raven/icon/playing.png")));
-            lbText.setFont(new java.awt.Font("Sanserif", 1, 14)); 
+            lbText.setFont(new java.awt.Font("Sanserif", 0, 14)); 
             lbText.setForeground(new Color(51,51,51));
             lbTime.setFont(new java.awt.Font("Sanserif", 0, 14));
             lbText.setForeground(new Color(51, 51, 51));
@@ -58,6 +57,7 @@ public class ItemMusic extends javax.swing.JPanel {
         lbTime = new javax.swing.JLabel();
         lbText = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(208, 52));
 
@@ -79,14 +79,14 @@ public class ItemMusic extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
                 .addComponent(lbTime, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(67, 67, 67)
                     .addComponent(lbText)
-                    .addContainerGap(63, Short.MAX_VALUE)))
+                    .addContainerGap(75, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
