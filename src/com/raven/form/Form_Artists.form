@@ -24,16 +24,16 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="mostPopular" pref="907" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="542" max="-2" attributes="0"/>
+                      <Component id="mostPopular" pref="365" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <Component id="music2" min="-2" pref="457" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -49,8 +49,7 @@
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="mostPopular" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="music2" min="-2" pref="301" max="-2" attributes="0"/>
+              <EmptySpace pref="575" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -81,13 +80,6 @@
       </Properties>
     </Component>
     <Component class="com.raven.component.MostPopular" name="mostPopular">
-    </Component>
-    <Component class="com.raven.component.Music" name="music2">
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="null"/>
-        </Property>
-      </AccessibilityProperties>
     </Component>
   </SubComponents>
 </Form>

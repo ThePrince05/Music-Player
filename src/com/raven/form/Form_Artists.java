@@ -28,7 +28,6 @@ public class Form_Artists extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         mostPopular = new com.raven.component.MostPopular();
-        music2 = new com.raven.component.Music();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -49,14 +48,14 @@ public class Form_Artists extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mostPopular, javax.swing.GroupLayout.DEFAULT_SIZE, 907, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(542, 542, 542)
+                        .addComponent(mostPopular, javax.swing.GroupLayout.DEFAULT_SIZE, 365, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(music2, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -68,11 +67,8 @@ public class Form_Artists extends javax.swing.JPanel {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mostPopular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(music2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(575, Short.MAX_VALUE))
         );
-
-        music2.getAccessibleContext().setAccessibleParent(null);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -80,6 +76,5 @@ public class Form_Artists extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private com.raven.component.MostPopular mostPopular;
-    private com.raven.component.Music music2;
     // End of variables declaration//GEN-END:variables
 }

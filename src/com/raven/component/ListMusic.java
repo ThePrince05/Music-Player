@@ -19,6 +19,7 @@ public class ListMusic<E extends Object> extends JList<E>{
         model = new DefaultListModel();
         setModel(model);
         setOpaque(false);
+       
     }
     
     @Override
@@ -27,7 +28,9 @@ public class ListMusic<E extends Object> extends JList<E>{
             
             @Override
             public Component getListCellRendererComponent(JList<?> jList, Object o, int index, boolean selected, boolean focus){
+                
                 Model_Music data;
+                
                 if(o instanceof Model_Music){
                    data = (Model_Music) o; 
                 }
@@ -36,6 +39,7 @@ public class ListMusic<E extends Object> extends JList<E>{
                 }
                 ItemMusic item = new ItemMusic(data);
                 item.setPlay(index == playIndex);
+                
                 return item;
             }
         }; 
