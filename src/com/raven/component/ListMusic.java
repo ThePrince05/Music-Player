@@ -3,10 +3,13 @@ package com.raven.component;
 
 import com.raven.model.Model_Music;
 import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
+import javax.swing.SwingUtilities;
 
 
 public class ListMusic<E extends Object> extends JList<E>{
@@ -19,7 +22,15 @@ public class ListMusic<E extends Object> extends JList<E>{
         model = new DefaultListModel();
         setModel(model);
         setOpaque(false);
-       
+        addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent me){
+                if(SwingUtilities.isLeftMouseButton(me)){
+                    playIndex = locationToIndex(me.getPoint());
+                    repaint();
+                }
+            }
+        });
     }
     
     @Override

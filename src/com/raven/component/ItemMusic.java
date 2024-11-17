@@ -82,8 +82,8 @@ public class ItemMusic extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbText, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbText, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(lbTime, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -103,13 +103,10 @@ public class ItemMusic extends javax.swing.JPanel {
     
     @Override
     protected void paintComponent(Graphics grphcs){
-        if(play){
             Graphics2D g2 = (Graphics2D)grphcs;
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g2.setColor(new Color(246, 246, 246));
-            g2.fillRect(0, getHeight() - 2, getWidth(), getHeight());
-        }
-        
+            g2.fillRect(0, getHeight() - 2, getWidth(), getHeight()); 
         super.paintComponent(grphcs);
     }
             
