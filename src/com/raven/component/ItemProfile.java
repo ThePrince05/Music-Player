@@ -43,6 +43,8 @@ public class ItemProfile extends javax.swing.JPanel {
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(208, 52));
 
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(2, 1, 1, 0));
 
         lbName.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
@@ -51,9 +53,10 @@ public class ItemProfile extends javax.swing.JPanel {
         lbName.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel1.add(lbName);
 
-        lbDescription.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        lbDescription.setForeground(new java.awt.Color(51, 51, 51));
+        lbDescription.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        lbDescription.setForeground(new java.awt.Color(115, 115, 115));
         lbDescription.setText("Description");
+        lbDescription.setToolTipText("");
         lbDescription.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel1.add(lbDescription);
 
@@ -65,20 +68,20 @@ public class ItemProfile extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE))
-                    .addComponent(imageAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         getAccessibleContext().setAccessibleName("");
